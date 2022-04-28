@@ -8,18 +8,18 @@ const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false)
   return (
     <div className="absolute w-full">
-      <div className="h-14 bg-transparent w-full flex flex-row px-7 items-center justify-between lg:hidden">
-        <img src={appLogo} alt="logo" className="h-12 w-12" />
+      <div className="h-14 bg-transparent w-full flex flex-row md:mt-7 px-7 md:px-10 items-center justify-between lg:hidden">
+        <img src={appLogo} alt="logo" className="h-12 w-12 md:h-16 md:w-16" />
         <FontAwesomeIcon
           icon={!isNavOpen ? faBars : faXmark}
-          className="text-base-100 h-7 w-7"
+          className="text-base-100 h-7 w-7 md:h-10 md:w-10"
           onClick={(e) => {
             setIsNavOpen((prev) => !prev)
           }}
         />
       </div>
       <div
-        className={`relative bg-opacity-80 bg-gray-700 flex-col items-center ${
+        className={`relative bg-opacity-80 bg-gray-700 mx-7 md:mx-10 flex-col items-center ${
           isNavOpen ? "flex" : "hidden"
         } lg:hidden`}
       >

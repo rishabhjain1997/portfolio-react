@@ -16,11 +16,20 @@ html {
   background-position: center bottom;
 }
 
+@media only screen and (min-width: 728px) {
+  .hero-section {
+    background: url("./assets/hero/hero_tablet.png"), black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+}
+
 @media only screen and (min-width: 1024px) {
   .hero-section {
     background: url("./assets/hero/hero_desktop.png"), black;
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 60% center;
+    background-position: 53% center;
   }
 }
