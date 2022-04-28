@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700;800&display=swap");
+
+body,
+html {
+  font-family: "Raleway", sans-serif;
+  background-color: #f7f8fd !important;
+}
+
+.hero-section {
+  background: url("./assets/hero/hero_mobile.png"), black;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center bottom;
+}
+
+@media only screen and (min-width: 1024px) {
+  .hero-section {
+    background: url("./assets/hero/hero_desktop.png"), black;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 60% center;
+  }
+}
