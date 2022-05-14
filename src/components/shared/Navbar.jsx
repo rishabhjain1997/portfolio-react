@@ -3,6 +3,8 @@ import appLogo from "../../assets/portfolio_icon.png"
 import appLogoGray from "../../assets/portfolio_icon_gray.png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import { faBars, faXmark } from "@fortawesome/free-solid-svg-icons"
+import { Link } from "react-router-dom"
+import { HashLink } from "react-router-hash-link"
 
 const Navbar = () => {
   const [isNavOpen, setIsNavOpen] = useState(false)
@@ -23,12 +25,20 @@ const Navbar = () => {
           isNavOpen ? "flex" : "hidden"
         } lg:hidden`}
       >
-        <div className="h-14 flex flex-row items-center justify-center text-base-100 font-semibold  hover:bg-gray-900 hover:bg-opacity-30 w-full border-2 border-transparent hover:border-red-300">
+        <HashLink
+          smooth
+          to="/#about-me"
+          className="h-14 flex flex-row items-center justify-center text-base-100 font-semibold  hover:bg-gray-900 hover:bg-opacity-30 w-full border-2 border-transparent hover:border-red-300"
+        >
           About me
-        </div>
-        <div className="h-14 flex flex-row items-center justify-center  text-base-100  font-semibold  hover:bg-gray-900 hover:bg-opacity-30 w-full  border-2 border-transparent hover:border-red-300">
+        </HashLink>
+        <HashLink
+          smooth
+          to="/#skills"
+          className="h-14 flex flex-row items-center justify-center  text-base-100  font-semibold  hover:bg-gray-900 hover:bg-opacity-30 w-full  border-2 border-transparent hover:border-red-300"
+        >
           Skills
-        </div>
+        </HashLink>
         <div className="h-14 flex flex-row items-center justify-center  text-base-100  font-semibold hover:bg-gray-900 hover:bg-opacity-30 w-full  border-2 border-transparent hover:border-red-300">
           Portfolio
         </div>
@@ -39,12 +49,20 @@ const Navbar = () => {
       <div className="hidden lg:flex h-24 xl:h-32 bg-transparent px-24 xl:px-56 flex-row justify-between items-center">
         <img src={appLogoGray} alt="logo" className="h-16 w-16" />
         <div className="flex flex-row justify-between lg:space-x-4 xl:space-x-12">
-          <div className="px-4 py-2 text-base-100 font-semibold  hover:bg-gray-900 hover:bg-opacity-30 border-2 border-transparent hover:border-red-300">
+          <HashLink
+            smooth
+            to="/#about-me"
+            className="px-4 py-2 text-base-100 font-semibold  hover:bg-gray-900 hover:bg-opacity-30 border-2 border-transparent hover:border-red-300"
+          >
             About me
-          </div>
-          <div className="px-4 py-2 text-base-100  font-semibold  hover:bg-gray-900 hover:bg-opacity-30 border-2 border-transparent hover:border-red-300">
+          </HashLink>
+          <HashLink
+            smooth
+            to="/#skills"
+            className="px-4 py-2 text-base-100  font-semibold  hover:bg-gray-900 hover:bg-opacity-30 border-2 border-transparent hover:border-red-300"
+          >
             Skills
-          </div>
+          </HashLink>
           <div className="px-4 py-2 text-base-100  font-semibold hover:bg-gray-900 hover:bg-opacity-30 border-2 border-transparent hover:border-red-300">
             Portfolio
           </div>

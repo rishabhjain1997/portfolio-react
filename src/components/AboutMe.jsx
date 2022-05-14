@@ -31,7 +31,10 @@ import mysqlLogo from "../assets/logo/mysql.png"
 const AboutMe = () => {
   return (
     <div className="bg-gradient-radial from-gray-100 via-gray-200 to-gray-400">
-      <div className="pt-20 md:pt-28 lg:pt-36 w-72 lg:w-[700px] md:w-96 mx-auto flex flex-col items-center">
+      <div
+        id="about-me"
+        className="pt-20 md:pt-28 lg:pt-36 w-72 lg:w-[700px] md:w-96 mx-auto flex flex-col items-center"
+      >
         <div className="w-52 lg:w-96 py-4 lg:py-6 border-8 border-black font-bold text-center text-sm lg:text-2xl lg:tracking-widest">
           ABOUT ME
         </div>
@@ -105,7 +108,10 @@ const AboutMe = () => {
           className="h-3 w-40  md:w-52 xl:w-64 mt-24 md:mt-32"
         />
       </div>
-      <div className="py-24 lg:py-28 w-72  md:w-[500px]  lg:w-[900px] xl:w-[1018px] mx-auto flex flex-col items-center">
+      <div
+        id="skills"
+        className="py-24 lg:py-28 w-72  md:w-[500px]  lg:w-[900px] xl:w-[1018px] mx-auto flex flex-col items-center"
+      >
         <div className="w-52 lg:w-96 py-4 lg:py-6 border-8 border-black font-bold text-center text-sm lg:text-2xl lg:tracking-widest">
           SKILLS
         </div>

@@ -21,18 +21,25 @@ const Hero = () => {
         </p>
       </div>
       <div className="flex flex-col  space-y-8 text-base-100  lg:flex-row lg:space-y-0 lg:space-x-8 lg:text-black lg:mt-32">
-        <FontAwesomeIcon
-          icon={faAt}
-          className="text-base-100 h-6  md:h-10 md:w-10 w-6 lg:text-black lg:bg-[#C4C4C4] lg:p-2"
-        />
-        <FontAwesomeIcon
-          icon={faGithub}
-          className="text-base-100  md:h-10 md:w-10 h-6 w-6  lg:text-black lg:bg-[#C4C4C4] lg:p-2"
-        />
-        <FontAwesomeIcon
-          icon={faLinkedin}
-          className="text-base-100 h-6 w-6  md:h-10 md:w-10  lg:text-black lg:bg-[#C4C4C4] lg:p-2"
-        />
+        <a href="mailto:rishabhjain1997@gmail.com?subject=Freelance Inquiry">
+          <FontAwesomeIcon
+            icon={faAt}
+            className="text-base-100 h-6  md:h-10 md:w-10 w-6 lg:text-black lg:bg-[#C4C4C4] lg:p-2"
+          />
+        </a>
+
+        <a href="https://github.com/rishabhjain1997">
+          <FontAwesomeIcon
+            icon={faGithub}
+            className="text-base-100  md:h-10 md:w-10 h-6 w-6  lg:text-black lg:bg-[#C4C4C4] lg:p-2"
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/rishabhjain22sep/">
+          <FontAwesomeIcon
+            icon={faLinkedin}
+            className="text-base-100 h-6 w-6  md:h-10 md:w-10  lg:text-black lg:bg-[#C4C4C4] lg:p-2"
+          />
+        </a>
       </div>
     </div>
   )
